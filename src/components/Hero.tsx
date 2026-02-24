@@ -23,7 +23,7 @@ export function Hero() {
           setLocation(data.result.content[0].text);
         }
       } catch {
-        setLocation('Bay Area');
+        setLocation('Kansas City, MO');
       }
     }
     fetchLocation();
@@ -54,9 +54,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-heading text-lg text-text-secondary mb-3"
         >
-          Personal MCP API for{' '}
-          <a href="https://danielmiessler.com" className="text-brand hover:underline">
-            Daniel Miessler
+          Personal API for{' '}
+          <a href="https://daemon.rlyehnet.xyz" className="text-brand hover:underline">
+            Andrew Clark
           </a>
         </motion.p>
 
@@ -66,7 +66,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="font-body text-lg text-text-secondary max-w-2xl mx-auto mb-5"
         >
-          My vision of the future where technology's primary role is to enable human connection. Daemons are live views into what a person is doing and what they care about for the purpose of connecting with others with similar interests.
+          Building AI systems that give ordinary people extraordinary capability — and teaching others how to use them. This daemon is a live view into what I'm working on and what I care about.
         </motion.p>
 
         {/* Location */}

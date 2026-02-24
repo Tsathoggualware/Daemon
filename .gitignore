@@ -1,6 +1,9 @@
 # dependencies (bun install)
 node_modules
 
+# personal daemon content — lives at ~/.config/daemon/daemon.md, not in repo
+public/daemon.md
+
 # output
 out
 dist

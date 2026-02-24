@@ -8,7 +8,7 @@ export function Hero() {
   useEffect(() => {
     async function fetchLocation() {
       try {
-        const response = await fetch('https://mcp.daemon.danielmiessler.com', {
+        const response = await fetch('https://mcp.daemon.rlyehnet.xyz', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

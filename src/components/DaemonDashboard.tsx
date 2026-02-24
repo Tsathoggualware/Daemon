@@ -169,7 +169,7 @@ export function DaemonDashboard() {
     setError(null);
 
     try {
-      const toolsResponse = await fetch('https://mcp.daemon.danielmiessler.com', {
+      const toolsResponse = await fetch('https://mcp.daemon.rlyehnet.xyz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ jsonrpc: '2.0', method: 'tools/list', id: 1 })
@@ -180,7 +180,7 @@ export function DaemonDashboard() {
         setToolCount(toolsData.result?.tools?.length || 0);
       }
 
-      const dataResponse = await fetch('https://mcp.daemon.danielmiessler.com', {
+      const dataResponse = await fetch('https://mcp.daemon.rlyehnet.xyz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -492,7 +492,7 @@ export function DaemonDashboard() {
             <Server className="w-5 h-5 text-text-tertiary" />
             <span className="font-mono text-sm font-semibold tracking-wider text-text-tertiary uppercase">API Access</span>
           </div>
-          <code className="font-mono text-base text-brand block mb-3">mcp.daemon.danielmiessler.com</code>
+          <code className="font-mono text-base text-brand block mb-3">mcp.daemon.rlyehnet.xyz</code>
           <p className="text-sm text-text-tertiary mb-4">Connect your AI assistant directly</p>
           <a
             href="/api/"
